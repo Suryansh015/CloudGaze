@@ -15,8 +15,9 @@ CloudGaze is a basic weather web app that provides real-time weather and local t
 1. **Home Screen**
    
    _Screenshot of the home screen with search bar._
-
-   ![Home Screen](./images/home_page.png)
+   <p align="center">
+      <img src="images/home_page.png" alt= "get_started" width="90%" />
+   </p>
 
 2. **Dark Mode**
    
