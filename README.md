@@ -1,7 +1,7 @@
 # CloudGaze
 
 CloudGaze is a basic weather web app that provides real-time weather and local time updates based on user-entered locations. The app features an interface with a search bar for entering the location and displays weather information with dynamic background color changes: yellow for high temperatures and blue for low temperatures. It has an explore more button that redirects the user to show results about the entered location.
-
+ 
 ## Features
 - Real-time weather updates for any location worldwide.
 - local time displayed of the specified region.
