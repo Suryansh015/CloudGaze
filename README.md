@@ -16,28 +16,39 @@ CloudGaze is a basic weather web app that provides real-time weather and local t
    
    _Screenshot of the home screen with search bar._
    <p align="center">
-      <img src="images/home_page.png" alt= "get_started" width="90%" />
+      <img src="images/home_page.png" alt= "home page" width="90%" />
    </p>
 
 2. **Dark Mode**
    
    _Screenshot of the home screen with search bar._
 
-   ![Home Screen](./screenshots/home_screen_dark.png)
+   <p align="center">
+      <img src="images/dark_home_page.png" alt= "dark home page" width="90%" />
+   </p>
 
 2. **High Temperature View**
    
    _Screenshot showing the app with a yellow background for high temperatures._
 
-   ![High Temperature](./screenshots/high_temperature.png)
-   ![High Temperature](./screenshots/high_temperature.png)
+   <p align="center">
+      <img src="images/warm_page.png" alt= "warm page" width="90%" />
+   </p>
+   <p align="center">
+      <img src="images/dark_warm_page.png" alt= "dark warm page" width="90%" />
+   </p>
 
 3. **Low Temperature View**
    
    _Screenshot showing the app with a blue background for low temperatures._
 
-   ![Low Temperature](./screenshots/low_temperature.png)
-   ![Low Temperature](./screenshots/low_temperature.png)
+   <p align="center">
+      <img src="images/cold_page.png" alt= "cold page" width="90%" />
+   </p>
+   <p align="center">
+      <img src="images/dark_cold_page.png" alt= "dark cold page" width="90%" />
+   </p>
+
 
 ## Installation
 1. Clone the repository:
