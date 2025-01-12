@@ -1,0 +1,242 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+.app.cold {
+  background-color: rgb(117, 167, 255); /* Blue color for cold weather */
+}
+
+.app.dark-cold {
+  background-color: rgb(47, 69, 107); /* Blue color for cold weather */
+}
+
+.app.warm {
+  background-color: #f8b400; /* Warm color for warm weather */
+}
+
+.app.dark-warm {
+  background-color: #d35f00;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 700px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #ffffff;
+  border-radius: 50px;
+  border: 2px solid black; 
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  max-width: 800px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 24px 46px 24px 26px;
+}
+
+.weather {
+  text-align: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.weather-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.weather {
+  font-size: 24px;
+}
+
+.local-time-box {
+  justify-content: space-around;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.local-time {
+  font-size: 18px;
+  font-weight:bold;
+  color: #000;
+  margin-top: 5px;
+  display: inline-flex;
+}
+
+.container {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun {
+  width: 25px;
+  height: 25px;
+  background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+  background: linear-gradient(to right, #fcbb04, #fffc00);
+  border-radius: 60px;
+  margin-top: -5px;
+  margin-left: 10px;
+  display: inline;
+  position: absolute;
+}
+
+.sunshine {
+  animation: sunshines 2s infinite;
+}
+
+@keyframes sunshines {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -100px;
+}
+
+.logo img {
+  width: 550px; 
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.02); /* Makes the logo scale up when hovered */
+}
+
+.top-bar {
+  position: fixed; /* This will fix the top-bar to the top of the page */
+  top: 10px;
+  right: 10px; /* Move the button to the right */
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; /* Ensures the top-bar takes the full width */
+  padding: 15px;
+  padding-right: 20px;
+  z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+.dark-mode-toggle {
+  background-color: black;
+  color: #fff;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.explore-bar {
+  width: 530px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 5px;
+}
+
+.explore-button {
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #007bff;
+  margin-left: 10px;
+  transition:  0.3s ease;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.explore-button:hover {
+  color: #fbfbfb;
+  background-color: #959595;
+}
+
