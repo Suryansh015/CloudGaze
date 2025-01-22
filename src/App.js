@@ -85,7 +85,7 @@ function App() {
           <input
             className="searchInput"
             type="text"
-            placeholder="Search something"
+            placeholder="Enter a location"
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
