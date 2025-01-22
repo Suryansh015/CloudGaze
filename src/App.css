@@ -16,9 +16,9 @@ body, html {
   transition: background-color 0.5s ease;
   background-color: white;
   color: black;
-  width: 100%; /* Ensure it doesn't exceed the viewport width */
-  overflow-x: hidden; /* Prevent overflow horizontally */
-  padding: 5px; /* Add consistent padding */
+  width: 100%; 
+  overflow-x: hidden; 
+  padding: 5px; 
 }
 
 .app.dark {
@@ -239,7 +239,6 @@ body, html {
   box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
-
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .logo {
@@ -254,10 +253,11 @@ body, html {
     flex-direction: row;
     padding: 10px;
     padding-top: 0px;
+    width: 98%;
   }
 
   .searchInput {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     padding-top: 20px;
   }
@@ -276,22 +276,31 @@ body, html {
 
   .temp {
     font-size: 46px;
+    margin-left: 30px;
   }
 
   .weather {
     font-size: 20px;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 15px;
   }
 
   .explore-bar {
     padding: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
+  }
+
+  .local-time-box {
+    margin-right: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .searchInput {
-    font-size: 2px;
+    margin-top: 8px;
+    font-size: 14px;
     padding: 8px;
   }
 
