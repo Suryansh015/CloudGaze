@@ -4,7 +4,7 @@ import LogoImg from './assets/_CloudGaze_Logo.png';
 import LogoImgDark from './assets/_CloudGaze_Logo_Dark.png';
 
 const weatherApi = {
-  key: "01877eb0f113d4d0c163508453b2d61e",
+  key: process.env.WEATHER_APP_KEY,
   base: "https://api.openweathermap.org/data/2.5/"
 };
 
